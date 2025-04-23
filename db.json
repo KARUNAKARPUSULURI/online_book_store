@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "karunakar",
+      "password": "123456",
+      "email": "karun@gmail.com",
+      "gender": "male",
+      "age": 30,
+      "phone_number": "9876543210"
+    },
+    {
+      "id": 2,
+      "username": "Chaitanya",
+      "password": "5432",
+      "email": "chau@gmail.com",
+      "gender": "male",
+      "age": 30,
+      "phone_number": "123454333"
+    },
+    {
+      "id": "b796",
+      "username": "alpha@gmail.com",
+      "password": "alpha"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "bookname": "Harry potter",
+      "author": "pawan",
+      "price": 120,
+      "rating": 4.5,
+      "description": "harry potter has 7 series which is about magic",
+      "image": "https://images.unsplash.com/photo-1667018355910-7fe90ad086ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "bookname": "After we collide",
+      "author": "Pawan",
+      "price": 120,
+      "rating": 4.5,
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "image": "https://images.unsplash.com/photo-1667018355910-7fe90ad086ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "bookname": "Harry potter",
+      "author": "pawan",
+      "price": 120,
+      "rating": 4.5,
+      "description": "harry potter has 7 series which is about magic",
+      "image": "https://images.unsplash.com/photo-1667018355910-7fe90ad086ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 4,
+      "bookname": "Harry potter",
+      "author": "pawan",
+      "price": 120,
+      "rating": 4.5,
+      "description": "harry potter has 7 series which is about magic",
+      "image": "https://images.unsplash.com/photo-1667018355910-7fe90ad086ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 5,
+      "bookname": "Harry potter",
+      "author": "pawan",
+      "price": 120,
+      "rating": 4.5,
+      "description": "harry potter has 7 series which is about magic",
+      "image": "https://images.unsplash.com/photo-1667018355910-7fe90ad086ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
+}

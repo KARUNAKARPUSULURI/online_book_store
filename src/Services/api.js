@@ -1,4 +1,4 @@
-import { getBooksUrl, postUsersUrl } from "./constants"
+import { getBooksUrl, loginUserUrl, postUsersUrl } from "./constants"
 
 
 export const getBooksData = async() => {
@@ -16,6 +16,12 @@ export const postUsersData = async(user) => {
         body : JSON.stringify(user)
     }
     const response = await fetch(postUsersUrl, payload)
+    const data = await response.json()
+    return data
+}
+
+export const LoginUserData = async(payload) => {
+    const response = await fetch(`${loginUserUrl}username=${payload.username}&password=${payload.password}`)
     const data = await response.json()
     return data
 }

@@ -19,9 +19,31 @@
       "phone_number": "123454333"
     },
     {
-      "id": "b796",
+      "id": "d189",
+      "username": "karunpusuluri@gmail.com",
+      "password": "123456",
+      "age": "23",
+      "gender": "male",
+      "phone_number": "9987654345",
+      "email": "karunpusuluri@gmail.com"
+    },
+    {
+      "id": "8eaf",
       "username": "alpha@gmail.com",
-      "password": "alpha"
+      "password": "alpha",
+      "age": "23",
+      "gender": "male",
+      "phone_number": "123456433",
+      "email": "karunpusuluri@gmail.com"
+    },
+    {
+      "id": "8848",
+      "username": "beta@gmail.com",
+      "password": "beta",
+      "age": "123",
+      "gender": "female",
+      "phone_number": "1231231231",
+      "email": "beta@gmail.com"
     }
   ],
   "books": [

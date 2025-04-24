@@ -1,23 +1,16 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { LoginUserData } from '../../Services/api'
+import { postUsersData } from '../../Services/api'
 
-const Login = () => {
-    const [userData, setUserData] = React.useState({ username: '', password: '' })
+const Register = () => {
+    const [userData, setUserData] = React.useState({ username: '', password: '', age : "", gender : "", phone_number:"", email: "" })
     const navigate = useNavigate()
     const handleChange = (e) => {
         setUserData({...userData, [e.target.name] : e.target.value})
     }
     const handleSubmit = async(e) => {
         e.preventDefault()
-        const payload = {
-            username : userData.username,
-            password : userData.password
-        }
-        LoginUserData(payload).then(data => {
-            localStorage.setItem("loggedIn", JSON.stringify(data[0]))
-            navigate("/home")
-        })
+        postUsersData(userData).then((data)=> navigate("/login"))
     }
     return (
         <>
@@ -52,9 +45,38 @@ const Login = () => {
                             name='password'
                             onChange={handleChange}
                         />
-                        <button type='submit'>Login</button>
+                        <label htmlFor='email'>Email: </label>
+                        <input
+                            type='email'
+                            placeholder='Enter your email...'
+                            id='email'
+                            name='email'
+                            onChange={handleChange}
+                        />
+                        <label htmlFor='age'>Age: </label>
+                        <input
+                            type='number'
+                            placeholder='Enter your age...'
+                            id='age'
+                            name='age'
+                            onChange={handleChange}
+                        />
+                        <label htmlFor='phone_number'>Phone Number: </label>
+                        <input
+                            type='tel'
+                            placeholder='Enter your number...'
+                            id='phone_number'
+                            name='phone_number'
+                            onChange={handleChange}
+                        />
+                        <select name='gender' onChange={handleChange}>
+                            <option value={""}>Select</option>
+                            <option value={"male"}>Male</option>
+                            <option value={"female"}>Female</option>
+                        </select>
+                        <button type='submit'>Register</button>
                         <p style={{ color: "blue" }}>
-                            Dont have an account? <Link to={"/register"}>SignUp here!!!</Link>
+                            Already have an account? <Link to={"/login"}>SignIn here!!!</Link>
                         </p>
                     </form>
                 </div>
@@ -63,4 +85,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Register
